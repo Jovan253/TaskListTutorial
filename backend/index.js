@@ -46,7 +46,7 @@ app.put("/task", async (req,res) => {
 
 app.delete("/task/:id", async (req,res) => {
     try {
-        const id = req.params;
+        const { id } = req.params;
         const response = await deleteTask(id);
         res.send(response);
     } catch(err) {

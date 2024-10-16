@@ -4,7 +4,6 @@ import { AddTaskForm } from "./components/AddTaskForm";
 import { Task } from "./components/Task";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { fetchTasks } from "../../backend/task";
 import { API_URL } from "./utils";
 
 const darkTheme = createTheme({
